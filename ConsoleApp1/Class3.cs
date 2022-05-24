@@ -4,10 +4,10 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class Array
+    class Class3
     {
         //find the second highest number of an array
-        static void Main(string[] args)
+        static void Main3(string[] args)
         {
             int max1, max2;
             int[] arr = { 12, 82, 54, 23, 85, 13, 57, 32, 44 };

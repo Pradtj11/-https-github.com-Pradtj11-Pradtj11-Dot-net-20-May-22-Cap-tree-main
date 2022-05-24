@@ -1,30 +1,63 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-/// <summary>
-/// Summary description for Class1
-/// </summary>
-public class Class1
+namespace ConsoleApp1
 {
-	public Class1()
-	{
-		static void Main(string[] args)
-		{
-			Console.WriteLine("Enter yor string: ");
-			String a = Console.ReadLine();
+    class Class1
+    {
+        //public static void Main6(string[] args)
+        //{
+        /* print  *
+                  * *
+                  * * *
+                  * * * *
+                  * * * * *
+         */
 
-			char[] temp = a.ToCharArray();
-			Array.Reverse(temp);
-			string b = new string(temp);
+        //for (int i = 1; i <= 5; i++)
+        //{
+        //  for (int j = 1; j <= i; j++)
+        //{
+        //        Console.Write("*");
+        //    }
+        //    Console.WriteLine();
 
-			if (a.Equals(b))
-			{
-				Console.WriteLine("The given string is palindrome");
-			}
-			else
-			{
-				Console.WriteLine("The given string is not a palindrome");
-			}
+        //}
+        //Console.ReadLine();
 
-		}
-	}
+
+
+        /* print  * * * * * * * *
+                  * *         * *
+                  *   *     *   *
+                  *     *  *    *
+                  *       *     *
+                  *     *  *    *
+                  *   *      *  *
+                  *  *        * *
+                  * * * * * * * *           
+         */
+        static void Main1(string[] args)
+        {
+            for (int row = 0; row<= 9; row++)
+            {
+                for (int col = 0; col<= 9; col++)
+                {
+                    if (row == 0 || col == 0 || row == 9 || col == 9 || row == col || col==9 -row+ 1)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                    
+                }
+                Console.WriteLine();
+            }
+
+        }
+    }
 }
+
